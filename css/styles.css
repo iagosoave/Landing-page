@@ -1,0 +1,218 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ccc;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #000;
+    border-bottom: 1px solid #333;
+}
+
+.navbar-brand img {
+    max-height: 50px;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    font-weight: 600;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #aaa;
+}
+
+
+/* Carousel */
+.carousel {
+    max-height: 70vh;
+    overflow: hidden;
+}
+
+.carousel img {
+    object-fit: cover;
+    height: 70vh;
+    width: 100%;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #fff;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+/* Features Section */
+.feature-box {
+    background-color: #121212;
+    border: 1px solid #333;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-box img {
+    max-height: 70px;
+    margin-bottom: 15px;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+}
+
+.feature-box h4 {
+    color: #fff;
+    margin-top: auto;
+    margin-bottom: 10px;
+}
+
+.feature-box p {
+    color: #ccc;
+}
+
+/* Grid for Cards */
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+/* Sobre o Advogado */
+#sobre-advogado {
+    background-color: #101010;
+    color: #fff;
+}
+
+#sobre-advogado img {
+    border: 5px solid #fff;
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+#sobre-advogado .btn-contact {
+    background-color: #444;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+#sobre-advogado .btn-contact:hover {
+    background-color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #ccc;
+}
+
+footer .col-md-3 h5 {
+    color: #fff;
+    font-weight: bold;
+}
+
+footer .col-md-3 p {
+    color: #ccc;
+    margin: 5px 0;
+}
+
+footer img {
+    max-width: 60px;
+}
+
+footer a {
+    color: #25D366;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #1da851;
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25D366;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    background-color: #1da851;
+    transform: scale(1.1);
+}
+
+.whatsapp-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.localizacao {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #333; /* Cor de fundo suave */
+}
+
+.localizacao h2 {
+    font-size: 32px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.localizacao p {
+    font-size: 20px;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.mapa iframe {
+    border: none;
+    max-width: 100%;
+    width: 80%;
+    height: 350px; /* Altura do mapa */
+    margin: 0 auto; /* Centraliza o mapa */
+}
